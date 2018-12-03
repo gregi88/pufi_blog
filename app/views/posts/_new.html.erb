@@ -1,0 +1,14 @@
+<h1>New post</h1>
+
+<div class="post-box">
+  <%= simple_form_for @post do |f| %>
+      <div class="row">
+        <%= f.input :title %>
+      </div>
+      <div class="row">
+        <%= f.input :content %>
+      </div>
+   <%= f.submit "Register", class: "btn-primary", id: "form-button-home" %>
+  <% end %>
+
+</div>
