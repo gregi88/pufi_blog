@@ -1,0 +1,11 @@
+<h1 class="main-title">My blog posts</h1>
+<div class="card">
+  <% @posts.each do |post| %>
+    <div class="post-title" >
+      <%= post.title %>
+    </div>
+    <div class="post-content">
+      <%= post.content %>
+    </div>
+  <% end %>
+</div>
